@@ -18,19 +18,15 @@
 // });
 
 var tl = gsap.timeline();
-tl.to("#box1",{
-    x:2000,
-    rotate:"45deg",
-    duration:2.5,
-    delay:1,
-})
-tl.to("#box2",{
-    x:2000,
-    rotate:"45deg",
-    duration:3,
-})
-tl.to("#box3",{
-    x:2000,
-    rotate:"45deg",
-    duration:2.5,
-})
+gsap.to("#logo h1", {
+    y: 30,
+    opacity: 1,
+    duration: 1.5,
+    delay: 0.5,
+});
+gsap.to("#links h1", {
+    y: 30,
+    opacity: 1,
+    delay: 0.5,
+    stagger:1
+});
