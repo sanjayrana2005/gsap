@@ -1,16 +1,18 @@
-gsap.from("#box", {
-    x: 1000,
-    backgroundColor: "red",
+gsap.to("#box1", {
+    x: 2000,
     rotate: "45deg",
-    duration: 5,
-    ease: "elastic.out",
+    duration: 2.5,
+    delay:1,    
 });
-
-gsap.to("h1", {
-    y:200,
-    opacity:1,
-    duration: 2,
-    color: "red",
-    // opacity:0,
-    stagger:-1,
-})
+gsap.to("#box2", {
+    x: 2000,
+    rotate: "45deg",
+    duration: 2.5,
+    delay:3.5,    
+});
+gsap.to("#box3", {
+    x: 2000,
+    rotate: "45deg",
+    duration: 2.5,
+    delay:6,    
+});
